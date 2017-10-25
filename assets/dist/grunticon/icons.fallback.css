@@ -2,9 +2,13 @@
 
 .icon--logo { background-image: url('png/logo.png'); background-repeat: no-repeat; }
 
+.icon--logout { background-image: url('png/logout.png'); background-repeat: no-repeat; }
+
 .icon--menu-close { background-image: url('png/menu-close.png'); background-repeat: no-repeat; }
 
 .icon--menu-open { background-image: url('png/menu-open.png'); background-repeat: no-repeat; }
 
 .icon--select { background-image: url('png/select.png'); background-repeat: no-repeat; }
+
+.icon--user-icon { background-image: url('png/user-icon.png'); background-repeat: no-repeat; }
 

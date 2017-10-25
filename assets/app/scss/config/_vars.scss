@@ -56,7 +56,7 @@ $blue-light:          #28AAE1;
  */
 
 /* shades */
-$color-text: $grey-dark;
+$color-text: #707070;
 $color-background: $white;
 $color-link: $blue-light;
 $color-link-hover: mix($blue-light, white, 50%);
@@ -86,7 +86,7 @@ $chinese:    #9338BA;
 // $font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 $font: 'Open Sans', sans-serif;
 
-$weight-normal:  300;
+$weight-light:  300;
 $weight-medium:  500;
 $weight-bold:    700;
 
