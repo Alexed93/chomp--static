@@ -71,17 +71,24 @@ $color-brand-yellow:  $yellow;
 $color-success:       #2ECC71;
 $color-error:         #E74C3C;
 
+/* Chomp */
+$italian:    #F82B2B;
+$american:   #385EBA;
+$thai:       #51A100;
+$indian:     #F2A109;
+$english:    #AB733D;
+$chinese:    #9338BA;
 
 
 /* $. Typography
 \*----------------------------------------------------------------*/
 
-$font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+// $font: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+$font: 'Open Sans', sans-serif;
 
 $weight-normal:  300;
 $weight-medium:  500;
 $weight-bold:    700;
-
 
 
 /* $. Layout
