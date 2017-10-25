@@ -80,17 +80,13 @@ $color-nav: $color-link;
 .nav--primary {
     font-size: 1.5rem;
 
-    .nav__item {
-        margin-left: $base;
-
-        &:first-child {
-           border-top: 0;
-        }
-    }
-
     @include respond-min($bp2) {
         margin-left: .75em;
         font-size: 1.4rem;
+
+        .nav__item {
+            margin-left: $base;
+        }
     }
 
     @include respond-min($bp3) {
