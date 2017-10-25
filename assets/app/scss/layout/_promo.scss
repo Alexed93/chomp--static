@@ -1,0 +1,20 @@
+/**
+ * Title:
+ *    Promo area
+ * Description:
+ *    Contains 3 featured restaurnats for that month as well as the printable voucher
+ */
+
+.promo-area {
+	position: relative;
+	background: #F8F8F8;
+}
+
+.featured {
+	width: 100%;
+	position: absolute;
+	top: -450px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: $white;
+}

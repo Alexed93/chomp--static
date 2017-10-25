@@ -48,12 +48,11 @@
     display: none;
     position: relative;
 
-
     @include respond-min($bp2) {
         display:block;
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 7px;
     }
 
     .is-active-nav & {
