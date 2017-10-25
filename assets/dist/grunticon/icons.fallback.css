@@ -1,5 +1,7 @@
 .icon--chevron-right-white { background-image: url('png/chevron-right-white.png'); background-repeat: no-repeat; }
 
+.icon--curve { background-image: url('png/curve.png'); background-repeat: no-repeat; }
+
 .icon--email--italian { background-image: url('png/email--italian.png'); background-repeat: no-repeat; }
 
 .icon--email { background-image: url('png/email.png'); background-repeat: no-repeat; }
@@ -17,6 +19,8 @@
 .icon--menu-close { background-image: url('png/menu-close.png'); background-repeat: no-repeat; }
 
 .icon--menu-open { background-image: url('png/menu-open.png'); background-repeat: no-repeat; }
+
+.icon--search { background-image: url('png/search.png'); background-repeat: no-repeat; }
 
 .icon--select { background-image: url('png/select.png'); background-repeat: no-repeat; }
 

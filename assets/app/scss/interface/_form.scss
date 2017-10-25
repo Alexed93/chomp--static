@@ -1,0 +1,32 @@
+/**
+ * Title:
+ *    Form
+ * Description:
+ *    ...
+ */
+
+
+
+/* $. Stuff
+\*----------------------------------------------------------------*/
+.form {
+	position: relative;
+}
+
+.form--search {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.form--sign-up {
+	max-width: 300px;
+}
+
+.popular__link {
+	color: $white;
+	border-bottom: none;
+
+	&:hover {
+		color: $italian;
+	}
+}
