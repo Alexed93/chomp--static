@@ -1,0 +1,74 @@
+/**
+ * Title:
+ *    Cards
+ * Description:
+ *    Restaurant cards e.g. Featured and search result styling
+ * Sections:
+ *    $. Setup
+ *    $. Modifications
+ */
+
+
+
+/* $. Setup
+\*----------------------------------------------------------------*/
+
+.card {
+    width: 100%;
+    height: auto;
+    margin-bottom: $base*4;
+    background: $white;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
+    clear: both;
+
+    // @include respond-min($bp2) {
+    //     margin-bottom: $base*3;
+    // }
+    // @include respond-min($bp4) {
+    //     margin-bottom: 0;
+    // }
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+
+    @include respond-min($bp2) {
+        width: 50%;
+        height: 100%;
+        float: left;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    @include respond-min($bp3) {
+        float: none;
+        width: auto;
+        max-height: 225px;
+    }
+}
+
+.card__detail {
+    padding: $base;
+    font-weight: $weight-light;
+
+    @include respond-min($bp2) {
+        float: right;
+        width: 50%;
+    }
+    @include respond-min($bp3) {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* $. Modifications
+\*----------------------------------------------------------------*/
+
+.card--featured {
+    // @include respond-min($bp4) {
+    //     min-height: 540px;
+    // }
+}
