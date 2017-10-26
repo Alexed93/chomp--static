@@ -6,15 +6,13 @@
  */
 
 .promo-area {
-	position: relative;
 	background: #F8F8F8;
 }
 
 .featured {
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: -450px;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
 	color: $white;
 }

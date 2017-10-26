@@ -10,55 +10,54 @@
 /* $. Stuff
 \*----------------------------------------------------------------*/
 .hero {
-	position: relative;
-	min-height: 125px;
-	padding: 3em 0;
-	color: $white;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+    position: relative;
+    min-height: 125px;
+    padding: 3em 0;
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
-	&:before, &:after {
-		content: '';
-		width: 100%;
-		position: absolute;
-	}
+    &:before, &:after {
+        content: '';
+        width: 100%;
+        position: absolute;
+    }
 
-	&:before {
-		top: 0;
-		left: 0;
-		min-height: 125px;
-		height: 100%;
-		background: #000;
-		opacity: .7;
-	}
+    &:before {
+        top: 0;
+        left: 0;
+        min-height: 125px;
+        height: 100%;
+        background: #000;
+        opacity: .7;
+    }
 
-	&:after {
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		background-image: url("../imgs/curve.svg");
-		background-repeat: no-repeat;
-		background-size: 145%;
-		background-position: center center;
-	}
+    @include respond-min($bp2) {
+        padding-top: 6em;
 
-	@include respond-min($bp2) {
-		padding-top: 6em;
-	}
+        &:after {
+            bottom: 0;
+            left: 0;
+            height: 0;
+            padding-bottom: 17%;
+            background-size: 101%;
+            background-image: url("../imgs/curve.svg");
+            background-repeat: no-repeat;
+        }
+    }
 }
 
 .hero--home {
-	background-image: url("../imgs/homepage.jpg");
+    background-image: url("../imgs/homepage.jpg");
 
-	@include respond-min($bp2) {
-		min-height: 800px;
+    @include respond-min($bp2) {
+        min-height: 800px;
 
-		&:before {
-			min-height: 800px;
-		}
-		&:after {
-			height: 200px;
-		}
-	}
+        &:before {
+            min-height: 800px;
+        }
+    }
 }
+
+
