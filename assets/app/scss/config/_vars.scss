@@ -49,7 +49,7 @@ $green:               #34AB00;
 $yellow:              #1B49BE;
 
 /* secondary */
-$blue-light:          #28AAE1;
+$color-text:          #28AAE1;
 
 /**
  * UI colours
@@ -58,8 +58,9 @@ $blue-light:          #28AAE1;
 /* shades */
 $color-text: #707070;
 $color-background: $white;
-$color-link: $blue-light;
-$color-link-hover: mix($blue-light, white, 50%);
+// $color-link: $blue-light;
+// $color-link-hover: mix($blue-light, white, 50%);
+$color-link: $color-text;
 
 /* palette */
 $color-brand-blue:    $blue;
@@ -79,6 +80,7 @@ $indian:     #F2A109;
 $english:    #AB733D;
 $chinese:    #9338BA;
 
+$color-link-hover: $italian;
 
 /* $. Typography
 \*----------------------------------------------------------------*/
