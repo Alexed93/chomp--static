@@ -81,7 +81,9 @@
 <main>
     <div class="hero hero--home | u-push-top">
         <div class="container container--small">
-            <h1 class="u-align-center u-push-bottom/2">Let's go out <span class="u-weight-medium">tonight</span></h1>
+
+            <h1 class="u-align-center u-push-bottom/2">Let's go out <span class="u-weight-medium">tonight</span></h1> <!-- Dynamic depending on time of day -->
+
             <form class="u-align-center u-push-bottom form form--search">
                 <label for="search" class="is-hidden">Search for a restaurant</label>
                 <input type="text" name="search" placeholder="What do you fancy?" class="search">
@@ -91,50 +93,86 @@
                     <a href="#" class="u-style-underline u-style-italic | popular__link">Italian,</a>
                     <a href="#" class="u-style-underline u-style-italic | popular__link">Indian</a>...
                 </div>
-            </form>
+            </form> <!-- Hero search -->
+
         </div>
     </div>
 
     <div class="promo-area">
         <div class="container featured test--flexbox">
-            <h1 class="beta u-pad-top sub-heading">Top <span class="u-weight-medium">Italian</span> picks for <span class="u-weight-medium">October 2017</span></h1>
+
+            <h1 class="beta u-pad-top sub-heading">Top <span class="u-weight-medium">Italian</span> picks for <span class="u-weight-medium">October 2017</span></h1> <!-- Dynamic depending on date and cuisine of the month -->
+
             <div class="grid grid--flex">
+
                 <div class="grid__item grid__item--4-12-bp3">
                     <div class="card card--featured">
                         <div class="card__image">
                             <img src="/assets/dist/imgs/restaurants/Zucco.jpg" alt="Zucco">
-                        </div>
+                        </div> <!-- End of card image -->
                         <div class="card__detail">
-                            <h1 class="gamma u-weight-medium u-push-bottom/2">Zucco</h1>
-                            <h2 class="delta u-weight-medium u-push-bottom/2">603 Meanwood Road, LS6 4AY</h2>
-                            <p>The menu changes regularly depending on what ingredients we can source from our suppliers on the day, however some items we are not allowed to change for fear of upsetting our regulars. </p>
-                        </div>
-                    </div>
-                </div>
+                            <h1 class="delta u-weight-medium u-push-bottom/2">Zucco</h1>
+                            <h2 class="epsilon u-weight-medium u-push-bottom/2">603 Meanwood Road, LS6 4AY</h2>
+                            <p class="u-zero-bottom">The menu changes regularly depending on what ingredients we can source from our suppliers on the day, however some items we are not allowed to change for fear of upsetting our regulars.</p>
+                            <div class="card__inputs">
+                                <div class="details u-float-left">
+                                    <span class="icon icon--medium icon--Italian"></span>
+                                    <span class="icon icon--medium icon--Family-Friendly"></span>
+                                    <span class="icon icon--medium icon--Open-Late"></span>
+                                    <span class="icon icon--medium icon--Parking"></span>
+                                </div>
+                                <a href="#" class="btn btn--primary cf u-float-right">
+                                    <span class="btn--label">View</span>
+                                    <span class="btn--icon">
+                                        <span class="icon icon--small icon--chevron-right-white"></span>
+                                    </span>
+                                </a>
+                            </div> <!-- End of card inputs -->
+                        </div> <!-- End of card detail -->
+                    </div> <!-- End of card -->
+                </div> <!-- End of card grid item -->
+
                 <div class="grid__item grid__item--4-12-bp3">
                     <div class="card card--featured">
                         <div class="card__image">
                             <img src="/assets/dist/imgs/restaurants/gusto.jpg" alt="Gusto">
-                        </div>
+                        </div> <!-- End of card image -->
                         <div class="card__detail">
-                            <h1 class="gamma u-weight-medium u-push-bottom/2">Gusto Restaurant &nbsp; Bar</h1>
-                            <h2 class="delta u-weight-medium u-push-bottom/2">10 Greek Street, LS1 5RU</h2>
-                            <p>Greek Street’s restaurant hotspot has a beautiful parquet floor, plush leather booths and soft lighting.</p>
-                        </div>
-                    </div>
-                </div>
+                            <h1 class="delta u-weight-medium u-push-bottom/2">Gusto Restaurant &amp; Bar</h1>
+                            <h2 class="epsilon u-weight-medium u-push-bottom/2">10 Greek Street, LS1 5RU</h2>
+                            <p class="u-zero-bottom">Greek Street’s restaurant hotspot has a beautiful parquet floor, plush leather booths and soft lighting.</p>
+                            <div class="card__inputs">
+                                <div class="details">
+                                    <span class="icon icon--medium icon--Italian"></span>
+                                    <span class="icon icon--medium icon--Family-Friendly"></span>
+                                </div>
+                            </div> <!-- End of card inputs -->
+                        </div> <!-- End of card detail -->
+                    </div> <!-- End of card -->
+                </div> <!-- End of card grid item -->
+
                 <div class="grid__item grid__item--4-12-bp3">
                     <div class="card card--featured">
                         <div class="card__image">
                             <img src="/assets/dist/imgs/restaurants/Divino.jpg" alt="Divino">
-                        </div>
+                        </div> <!-- End of card image -->
                         <div class="card__detail">
-                            <h1 class="gamma u-weight-medium u-push-bottom/2">Divino</h1>
-                            <h2 class="delta u-weight-medium u-push-bottom/2">473 Otley Road, LS16 7NR</h2>
-                            <p>Big city style in a suburban location. Divino in the beautiful suburb of Adel, North Leeds brings a sophisticated, 'City' dining experience to your doorstep.</p>
-                        </div>
-                    </div>
-                </div>
+                            <h1 class="delta u-weight-medium u-push-bottom/2">Divino</h1>
+                            <h2 class="epsilon u-weight-medium u-push-bottom/2">473 Otley Road, LS16 7NR</h2>
+                            <p class="u-zero-bottom">Big city style in a suburban location. Divino in the beautiful suburb of Adel, North Leeds brings a sophisticated, 'City' dining experience to your doorstep.</p>
+                            <div class="card__inputs">
+                                <div class="details">
+                                    <span class="icon icon--medium icon--Italian"></span>
+                                    <span class="icon icon--medium icon--Family-Friendly"></span>
+                                    <span class="icon icon--medium icon--Open-Late"></span>
+                                    <span class="icon icon--medium icon--Parking"></span>
+                                    <span class="icon icon--medium icon--Alcohol"></span>
+                                </div>
+                            </div> <!-- End of card inputs -->
+                        </div> <!-- End of card detail -->
+                    </div> <!-- End of card -->
+                </div> <!-- End of card grid item -->
+
             </div>
         </div>
     </div>
@@ -144,32 +182,37 @@
 <footer class="footer">
     <div class="container">
         <div class="grid zeta">
+
             <div class="grid__item grid__item--5-12-bp3">
                 <form class="form form--sign-up">
                     <label for="email" class="zeta u-weight-medium u-zero-bottom">Sign up to our weekly newsletter:</label>
                     <input type="email" name="email" placeholder="Enter your email address" class="sign-up">
                     <button type="button" class="sign-up-submit"><span class="icon icon--small icon--chevron-right-white"></span><span class="is-hidden">Submit</span></button>
                 </form>
-            </div>
+            </div> <!-- Newsletter signup -->
+
             <div class="grid__item grid__item--2-12-bp3">
                 <h3 class="zeta u-weight-medium u-zero-bottom">Write to us:</h3>
                 <p class="u-weight-light">Chomp HQ<br>
                 49 Hilton Rd, Leeds<br>
                 LS8 4HA</p>
-            </div>
+            </div> <!-- Address -->
+
             <div class="grid__item grid__item--2-12-bp3">
                 <h3 class="zeta u-weight-medium u-zero-bottom">Call us:</h3>
                 <a href="tel:01234 891234" class="u-weight-light footer__link">01234 891234</a>
                 <h3 class="zeta u-weight-medium u-zero-bottom u-push-top">Fax us:</h3>
                 <a href="tel:01234 891234" class="u-weight-light footer__link">01234 891234</a>
-            </div>
+            </div> <!-- Contact -->
+
             <div class="grid__item grid__item--3-12-bp3">
                 <div class="social-media">
                     <a href="#" class="icon icon--large icon--twitter--italian"></a>
                     <a href="#" class="icon icon--large icon--facebook--italian | u-push-left@2"></a>
-                    <a href="#" class="icon icon--large icon--twitter--italian | u-push-left@2"></a>
+                    <a href="#" class="icon icon--large icon--email--italian | u-push-left@2"></a>
                 </div>
-            </div>
+            </div> <!-- Social Media -->
+
         </div>
     </div>
 </footer>
