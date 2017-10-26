@@ -114,6 +114,11 @@ h1.sub-heading--inverted {
 }
 
 a.sub-link {
+    text-align: center;
     border: none;
     text-decoration: underline;
+
+    @include respond-min($bp2) {
+        text-align: right;
+    }
 }

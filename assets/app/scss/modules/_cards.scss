@@ -19,16 +19,10 @@
     position: relative;
     margin-bottom: $base;
     background: $white;
+    // background: #F8F8F8;
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);
     border-radius: 3px;
     clear: both;
-
-    // @include respond-min($bp2) {
-    //     margin-bottom: $base*3;
-    // }
-    // @include respond-min($bp4) {
-    //     margin-bottom: 0;
-    // }
 }
 
 .card__image {
@@ -46,8 +40,6 @@
         }
     }
     @include respond-min($bp4) {
-        float: none;
-        width: auto;
         max-height: 225px;
     }
 }
@@ -58,15 +50,9 @@
     font-weight: $weight-light;
 
     @include respond-min($bp2) {
-        width: 50%;
+        // width: 50%;
         height: 100%;
         float: right;
-    }
-    @include respond-min($bp4) {
-        width: 100%;
-        float: none;
-        position: static;
-        height: auto;
     }
 }
 
@@ -81,7 +67,6 @@
 }
 
 .details {
-    // float: left;
     span {
         margin-left: $base/4;
     }
@@ -91,4 +76,30 @@
 \*----------------------------------------------------------------*/
 
 .card--featured {
+    // background: $white;
+
+    .card__image {
+        @include respond-min($bp2) {
+            width: 50%;
+        }
+
+        @include respond-min($bp4) {
+            float: none;
+            width: auto;
+        }
+    }
+
+    .card__detail {
+        @include respond-min($bp2) {
+            width: 50%;
+        }
+
+        @include respond-min($bp4) {
+            width: 100%;
+            float: none;
+            position: static;
+            height: auto;
+        }
+    }
+
 }
