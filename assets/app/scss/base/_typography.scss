@@ -107,6 +107,12 @@ h1.sub-heading {
     }
 }
 
+h1.sub-heading--inverted {
+    @include respond-min($bp2) {
+        color: $color-text;
+    }
+}
+
 a.sub-link {
     border: none;
     text-decoration: underline;

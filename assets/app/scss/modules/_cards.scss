@@ -45,7 +45,7 @@
             width: 100%;
         }
     }
-    @include respond-min($bp3) {
+    @include respond-min($bp4) {
         float: none;
         width: auto;
         max-height: 225px;
@@ -62,7 +62,7 @@
         height: 100%;
         float: right;
     }
-    @include respond-min($bp3) {
+    @include respond-min($bp4) {
         width: 100%;
         float: none;
         position: static;
