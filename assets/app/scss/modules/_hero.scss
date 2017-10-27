@@ -12,7 +12,7 @@
 .hero {
     position: relative;
     min-height: 125px;
-    padding: 3em 0;
+    padding: $base*2 0;
     color: $white;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,30 +34,60 @@
     }
 
     @include respond-min($bp2) {
-        padding-top: 6em;
-
         &:after {
             bottom: 0;
             left: 0;
             height: 0;
             padding-bottom: 13%;
             background-size: 101%;
-            background-image: url("../imgs/curve.svg");
             background-repeat: no-repeat;
         }
     }
 }
 
 .hero--home {
+    padding: 3em 0;
     background-image: url("../imgs/homepage.jpg");
 
     @include respond-min($bp2) {
         min-height: 800px;
+        padding-top: 6em;
 
         &:before {
             min-height: 800px;
         }
+        &:after {
+            background-image: url("../imgs/curve.svg");
+        }
     }
+}
+
+.hero--index {
+    background-image: url("../imgs/index.jpg");
+
+    @include respond-min($bp2) {
+        min-height: 350px;
+        padding-top: 5em;
+
+        &:before {
+            min-height: 350px;
+        }
+        &:after {
+            background-image: url("../imgs/curve--less.svg");
+        }
+    }
+
+    // @include respond-min($bp4) {
+    //     min-height: 400px;
+    //     padding-top: 6em;
+
+    //     &:before {
+    //         min-height: 400px;
+    //     }
+    // }
+}
+.hero--detail {
+    background-image: url("../imgs/details.jpg");
 }
 
 
