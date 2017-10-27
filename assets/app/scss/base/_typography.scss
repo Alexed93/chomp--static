@@ -120,5 +120,6 @@ a.sub-link {
 
     @include respond-min($bp2) {
         text-align: right;
+        float: right;
     }
 }
