@@ -17,6 +17,10 @@
 		padding-top: 0;
 		clear: both;
 	}
+
+	@include respond-min($bp5) {
+		padding-top: $base;
+	}
 }
 
 .filter-area {

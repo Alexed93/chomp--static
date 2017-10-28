@@ -77,14 +77,11 @@
         }
     }
 
-    // @include respond-min($bp4) {
-    //     min-height: 400px;
-    //     padding-top: 6em;
-
-    //     &:before {
-    //         min-height: 400px;
-    //     }
-    // }
+    @include respond-min($bp5) {
+        &:after {
+            padding-bottom: 9%;
+        }
+    }
 }
 .hero--detail {
     background-image: url("../imgs/details.jpg");

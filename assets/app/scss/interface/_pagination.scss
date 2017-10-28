@@ -30,7 +30,7 @@
 
     .first,
     .last {
-        border: none;;
+        border: none;
         background: $italian;
         border: 1px solid $italian;
 
@@ -40,6 +40,22 @@
 
         &:hover {
             background: darken($italian, 10%);
+        }
+    }
+
+    .first {
+        border-radius: 3px 3px 0 0;
+
+        @include respond-min($bp2) {
+            border-radius: 3px 0 0 3px;
+        }
+    }
+
+    .last {
+        border-radius: 0 0 3px 3px;
+
+         @include respond-min($bp2) {
+            border-radius: 0 3px 3px 0;
         }
     }
 }
