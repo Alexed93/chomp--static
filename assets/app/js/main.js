@@ -44,6 +44,15 @@
         toggleNav.toggleClass('icon--menu-open').toggleClass('icon--menu-close');
     });
 
+
+    /**
+     * Toggle the filter area
+     */
+    $('.js-toggle-form').on('click', function() {
+        // 1. Toggle the filter area on and off
+        body.toggleClass('is-active-form');
+    });
+
 })(jQuery);
 
 

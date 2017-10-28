@@ -20,7 +20,12 @@
 }
 
 .filter-area form {
+	display: none;
 	padding-bottom: $base*3;
+
+	.is-active-form & {
+        display: block;
+    }
 }
 
 .filter-toggle {
