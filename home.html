@@ -88,12 +88,12 @@
         </div> <!-- Hero container -->
     </div> <!-- End Hero -->
 
-    <div class="filter-area u-pad-bottom@2">
+    <div class="search-area u-pad-bottom@2">
         <div class="container">
             <div class="search-options cf">
-                <div class="search-area u-float-left">
+                <div class="search-area">
                     <h3 class="u-push-bottom/2 u-weight-medium">Search again</h3>
-                    <form class="u-push-bottom form form-search--filter">
+                    <form class="u-push-bottom form form-search--filter" action="">
                         <label for="search" class="is-hidden">Search for a restaurant</label>
                         <input type="text" name="search" placeholder="What do you fancy?" class="search">
                         <button type="button" class="search-submit"><span class="icon icon--small icon--search"></span><span class="is-hidden">Search</span></button>
@@ -103,13 +103,81 @@
                             <a href="#" class="u-style-underline u-style-italic | popular__link">Indian</a>...
                         </div>
                     </form> <!-- Filter search -->
+                    <div class="filter-toggle">
+                        <h3 class="delta u-weight-medium u-display-inline u-push-bottom/2">Show filters</h3>
+                        <input type="checkbox" id="switch" class="toggle-switch" />
+                        <label for="switch" class="toggle-switch__label">Toggle</label>
+                    </div> <!-- Filter toggle -->
                 </div> <!-- Search area -->
-                <div class="filter-toggle u-float-left">
-                    <h3 class="u-weight-medium u-display-inline u-push-bottom/2">Show filters</h3>
-                    <input type="checkbox" id="switch" class="toggle-switch" />
-                    <label for="switch" class="toggle-switch__label">Toggle</label>
-                </div> <!-- Filter toggle -->
             </div> <!-- Search options area (Search bar and filter toggle) -->
+
+            <div class="filter-area u-push-bottom/2 u-push-top">
+                <form action="">
+
+                    <div class="options-additional">
+                        <h3 class="u-weight-medium u-push-bottom/2">Filter it down</h3>
+                        <ul class="options-additional__list">
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="option1" value="family">
+                                <label for="option1" class="u-display-inline u-push-left/2 u-weight-light">Family friendly</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="option2" value="openlate">
+                                <label for="option2" class="u-display-inline u-push-left/2 u-weight-light">Open late</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="option3" value="parking">
+                                <label for="option3" class="u-display-inline u-push-left/2 u-weight-light">Customer parking</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="option4" value="alcohol">
+                                <label for="option4" class="u-display-inline u-push-left/2 u-weight-light">Serves alcohol</label>
+                            </li>
+                        </ul> <!-- Options additional list -->
+                    </div> <!-- Options additional -->
+
+                    <div class="options-cuisine">
+                        <h3 class="u-weight-medium u-push-bottom/2">Try something else</h3>
+                        <ul class="options-cuisine__list cf">
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine1" value="chinese">
+                                <label for="cuisine1" class="u-display-inline u-push-left/2 u-weight-light">Chinese</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine2" value="english">
+                                <label for="cuisine2" class="u-display-inline u-push-left/2 u-weight-light">English</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine3" value="american">
+                                <label for="cuisine3" class="u-display-inline u-push-left/2 u-weight-light">American</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine4" value="indian">
+                                <label for="cuisine4" class="u-display-inline u-push-left/2 u-weight-light">Indian</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine5" value="italian">
+                                <label for="cuisine5" class="u-display-inline u-push-left/2 u-weight-light">Italian</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine6" value="french">
+                                <label for="cuisine6" class="u-display-inline u-push-left/2 u-weight-light">French</label>
+                            </li>
+                            <li class="">
+                                <input type="checkbox" class="checkbox" id="cuisine7" value="thai">
+                                <label for="cuisine7" class="u-display-inline u-push-left/2 u-weight-light">Thai</label>
+                            </li>
+                        </ul> <!-- Options cuisine list -->
+                    </div> <!-- Options cuisine -->
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Search" class="filter_submit btn u-push-right">
+                        <input type="reset" value="Reset filters" class="filter_clear btn btn--reset u-style-underline u-weight-medium">
+                    </div>
+
+                </form> <!-- Filter form -->
+            </div> <!-- Filter area -->
+
         </div> <!-- Container -->
     </div> <!-- Filter area -->
 
@@ -120,7 +188,7 @@
         <div class="grid zeta">
 
             <div class="grid__item grid__item--5-12-bp3">
-                <form class="form form--sign-up">
+                <form class="form form--sign-up" action="">
                     <label for="email" class="zeta u-weight-medium u-zero-bottom">Sign up to our weekly newsletter:</label>
                     <input type="email" name="email" placeholder="Enter your email address" class="sign-up">
                     <button type="button" class="sign-up-submit"><span class="icon icon--small icon--chevron-right-white"></span><span class="is-hidden">Submit</span></button>

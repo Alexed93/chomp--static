@@ -2,22 +2,35 @@
  * Title:
  *    Search
  * Description:
- *    Search areas
+ *    Toggle switch
+ *    Filters
 
 
 
 /* $. Stuff
 \*----------------------------------------------------------------*/
 
-.search-options {
+.search-area {
+	padding-top: $base;
+
+	@include respond-min($bp2) {
+		padding-top: 0;
+		clear: both;
+	}
 }
 
-.search-area {
+.filter-area form {
+	padding-bottom: $base*3;
 }
 
 .filter-toggle {
-	@include respond-min($bp2) {
-		margin-left: $base*4;
+	margin: $base*1.5 0 $base*1 0;
+
+	@include respond-min($bp3) {
+		float: left;
+		margin-left: $base*2;
+		margin-top: 0;
+		line-height: 2;
 	}
 }
 
@@ -32,8 +45,8 @@ input[type=checkbox].toggle-switch {
 }
 
 .toggle-switch__label {
-	width: 100px;
-	height: 50px;
+	width: 75px;
+	height: 35px;
 	position: relative;
 	cursor: pointer;
 	background: $grey;
@@ -42,14 +55,19 @@ input[type=checkbox].toggle-switch {
 
 	&:after {
 		content: '';
-		width: 40px;
-		height: 40px;
+		width: 25px;
+		height: 25px;
 		position: absolute;
 		top: 5px;
 		left: 5px;
 		background: $white;
 		border-radius: 50%;
 		transition: 0.3s;
+	}
+
+	@include respond-min($bp3) {
+		display: inline-block;
+		margin-left: $base/2;
 	}
 }
 
@@ -60,4 +78,27 @@ input:checked.toggle-switch + .toggle-switch__label {
 input:checked.toggle-switch + .toggle-switch__label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
+}
+
+/* $. Filters
+\*----------------------------------------------------------------*/
+
+.options-cuisine, .options-additional {
+	@include respond-min($bp3) {
+		float: left;
+	}
+}
+
+.options-cuisine {
+	@include respond-min($bp3) {
+		max-width: 350px;
+		margin-left: 5em;
+
+		.options-cuisine__list {
+			li {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
 }
