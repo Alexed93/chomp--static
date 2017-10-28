@@ -19,13 +19,16 @@
 	}
 }
 
-.filter-area form {
+.filter-area {
 	display: none;
-	padding-bottom: $base*3;
 
 	.is-active-form & {
         display: block;
     }
+}
+
+.filter-area form {
+	padding-bottom: $base*3;
 }
 
 .filter-toggle {
