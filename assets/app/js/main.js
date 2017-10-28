@@ -20,11 +20,11 @@
     /**
      * Setup 'CustomSelect' plugin on all Select elements
      */
-    if(!$('html').hasClass('ie')) {
-        $("select").each(function() {
-            new CustomSelect($(this));
-        });
-    }
+    // if(!$('html').hasClass('ie')) {
+    //     $("select").each(function() {
+    //         new CustomSelect($(this));
+    //     });
+    // }
 
     /**
      * Set variable to pool DOM only once.

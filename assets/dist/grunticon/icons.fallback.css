@@ -26,6 +26,8 @@
 
 .icon--Website { background-image: url('png/Website.png'); background-repeat: no-repeat; }
 
+.icon--chevron-down-white { background-image: url('png/chevron-down-white.png'); background-repeat: no-repeat; }
+
 .icon--chevron-right-white { background-image: url('png/chevron-right-white.png'); background-repeat: no-repeat; }
 
 .icon--curve { background-image: url('png/curve.png'); background-repeat: no-repeat; }
@@ -37,6 +39,12 @@
 .icon--facebook--italian { background-image: url('png/facebook--italian.png'); background-repeat: no-repeat; }
 
 .icon--facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
+
+.icon--grid--active { background-image: url('png/grid--active.png'); background-repeat: no-repeat; }
+
+.icon--grid { background-image: url('png/grid.png'); background-repeat: no-repeat; }
+
+.icon--list--inactive { background-image: url('png/list--inactive.png'); background-repeat: no-repeat; }
 
 .icon--logo-mixd { background-image: url('png/logo-mixd.png'); background-repeat: no-repeat; }
 

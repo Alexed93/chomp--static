@@ -15,11 +15,22 @@ input.search, input.sign-up {
     border-radius: 3px;
 }
 
-
 input.sign-up {
     height: 40px;
 }
 
 input.search {
     height: 60px;
+}
+
+select {
+	width: 100%;
+
+	@include respond-min($bp2) {
+		width: 50%
+	}
+
+	@include respond-min($bp3) {
+		width: 25%
+	}
 }

@@ -101,5 +101,19 @@
             height: auto;
         }
     }
+}
 
+/* $. Extra
+\*----------------------------------------------------------------*/
+
+.sorting {
+    text-align: left;
+
+    @include respond-min($bp2) {
+        text-align: right;
+    }
+
+    // button {
+    //     background-size: cover;
+    // }
 }
