@@ -142,6 +142,9 @@
 .u-float-left   { float: left; }
 .u-float-right  { float: right; }
 
+/* Margin specific */
+.u-margin-center { margin: 0 auto; }
+
 /* Size specific */
 .u-float-right-bp4 {
     @include respond-min($bp4) {

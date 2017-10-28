@@ -1,0 +1,63 @@
+/**
+ * Title:
+ *    Search
+ * Description:
+ *    Search areas
+
+
+
+/* $. Stuff
+\*----------------------------------------------------------------*/
+
+.search-options {
+}
+
+.search-area {
+}
+
+.filter-toggle {
+	@include respond-min($bp2) {
+		margin-left: $base*4;
+	}
+}
+
+/* $. Toggle switch
+\*----------------------------------------------------------------*/
+// Toggle switch made using this codepen as a base https://codepen.io/mburnette/pen/LxNxNg
+
+input[type=checkbox].toggle-switch {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.toggle-switch__label {
+	width: 100px;
+	height: 50px;
+	position: relative;
+	cursor: pointer;
+	background: $grey;
+	border-radius: 25px;
+	text-indent: -9999px;
+
+	&:after {
+		content: '';
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		background: $white;
+		border-radius: 50%;
+		transition: 0.3s;
+	}
+}
+
+input:checked.toggle-switch + .toggle-switch__label {
+	background: $italian;
+}
+
+input:checked.toggle-switch + .toggle-switch__label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
