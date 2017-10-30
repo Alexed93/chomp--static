@@ -101,21 +101,6 @@
     }
 }
 
-.card--summary {
-    .summary-detail {
-        padding: $base;
-    }
-
-    @include respond-min($bp2) {
-        top: -350px;
-
-        .summary-detail {
-            width: 45%;
-            float: right;
-        }
-    }
-}
-
 /* $. Extra
 \*----------------------------------------------------------------*/
 

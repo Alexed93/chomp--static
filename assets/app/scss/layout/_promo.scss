@@ -10,17 +10,12 @@
 }
 
 .featured {
-    // position: relative;
-    // top: 0;
-    // left: 0;
     color: $color-text;
 
     @include respond-min($bp2) {
         margin-top: -500px;
-        // top: -500px;
     }
     @include respond-min($bp4) {
         margin-top: -450px;
-        // top: -450px;
     }
 }
