@@ -7,7 +7,7 @@
 
 .slider {
 	@include respond-min($bp2) {
-		width: 60%;
+		width: 55%;
 		float: left;
 	}
 }
