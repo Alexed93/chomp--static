@@ -76,8 +76,6 @@
 \*----------------------------------------------------------------*/
 
 .card--featured {
-    // background: $white;
-
     .card__image {
         @include respond-min($bp2) {
             width: 50%;
@@ -103,6 +101,18 @@
     }
 }
 
+.card--summary {
+    @include respond-min($bp2) {
+        top: -350px;
+
+        .summary-detail {
+            width: 40%;
+            float: right;
+            padding: $base;
+        }
+    }
+}
+
 /* $. Extra
 \*----------------------------------------------------------------*/
 
@@ -112,8 +122,4 @@
     @include respond-min($bp2) {
         text-align: right;
     }
-
-    // button {
-    //     background-size: cover;
-    // }
 }

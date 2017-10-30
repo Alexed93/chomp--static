@@ -60,7 +60,6 @@ $color-text: #707070;
 $color-background: $white;
 // $color-link: $blue-light;
 // $color-link-hover: mix($blue-light, white, 50%);
-$color-link: $color-text;
 
 /* palette */
 $color-brand-blue:    $blue;
@@ -80,7 +79,8 @@ $indian:     #F2A109;
 $english:    #AB733D;
 $chinese:    #9338BA;
 
-$color-link-hover: $italian;
+$color-link: $italian;
+$color-link-hover: darken($italian, 15%);
 
 /* $. Typography
 \*----------------------------------------------------------------*/

@@ -83,8 +83,23 @@
         }
     }
 }
+
 .hero--detail {
-    background-image: url("../imgs/details.jpg");
+    padding: 3em 0;
+    background-image: url("../imgs/detail.jpg");
+
+    @include respond-min($bp2) {
+        min-height: 600px;
+        padding-top: 6em;
+
+        &:before {
+            min-height: 600px;
+        }
+        &:after {
+            background-image: url("../imgs/curve--white.svg");
+            padding-bottom: 15%;
+        }
+    }
 }
 
 

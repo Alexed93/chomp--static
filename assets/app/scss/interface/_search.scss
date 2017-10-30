@@ -74,7 +74,7 @@ input[type=checkbox].toggle-switch {
 		left: 5px;
 		background: $white;
 		border-radius: 50%;
-		transition: 0.3s;
+		transition: all 0.3s ease;
 	}
 
 	@include respond-min($bp3) {

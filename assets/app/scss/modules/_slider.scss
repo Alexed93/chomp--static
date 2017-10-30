@@ -1,0 +1,13 @@
+/**
+ * Title:
+ *    Slider
+ * Description:
+ *    Slider area of summary restaurant cards
+ */
+
+.slider {
+	@include respond-min($bp2) {
+		width: 60%;
+		float: left;
+	}
+}
