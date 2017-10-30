@@ -101,6 +101,7 @@ module.exports = function( grunt ) {
                     '<%= dirs.assets_output %>/js/head.min.js': [
                         '<%= dirs.modules %>/jquery/dist/jquery.js',
                         '<%= dirs.assets_input %>/js/vendors/modernizr.js',
+                        '<%= dirs.assets_input %>/js/vendors/slick.js',
                         '<%= dirs.assets_input %>/js/head.js'
                     ]
                 }

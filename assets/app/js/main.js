@@ -53,6 +53,29 @@
         body.toggleClass('is-active-form');
     });
 
+
+    /**
+     * Slick stuff
+     */
+    $('.slider-for').slick({
+        autoplay: true,
+        arrows: false,
+        mobileFirst: true,
+        draggable: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.slider-nav',
+        variableWidth: true
+    });
+
+    $('.slider-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        centerMode: true,
+        focusOnSelect: true
+    });
+
 })(jQuery);
 
 
