@@ -58,7 +58,7 @@
      * Slick stuff
      */
     $('.slider-for').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         mobileFirst: true,
         draggable: false,
