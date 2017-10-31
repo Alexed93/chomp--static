@@ -27,9 +27,35 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src=""></script> <!-- Slick -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script> <!-- Twitter -->
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script> <!-- Facebook -->
+
     <noscript><link href="/assets/dist/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
     <script src="/assets/dist/js/head.min.js"></script>
+
 </head>
 
 <body class="debug">
@@ -156,7 +182,7 @@
 
     <div class="container u-weight-light">
         <div class="grid">
-            <div class="grid__item grid__item--8-12-bp3">
+            <div class="grid__item grid__item--9-12-bp3">
                 <h1 class="beta u-push-bottom/2">A bit about us</h1>
                 <h2 class="gamma u-push-bottom/2">A Family Run Award Winning Chinese Restaurant.</h2>
                 <p>Zen Rendezvous is a multi award winning contemporary oriental restaurant with rave reviews from national media including appearances on Channel 4’s ‘Gordon Ramsey’s F Word – Best Local UK Restaurant’.</p>
@@ -185,7 +211,7 @@
                 <h2 class="gamma u-push-bottom/2">Read about what other Chompers thought, or add your own comment</h2>
                 <div class="comments">
 
-                    <div class="pagination u-push-top@2 u-push-bottom@2">
+                    <div class="pagination u-push-top@2">
                         <ul class="list--unset list--inline">
                             <li class="first">
                                 <a href="#" class="">Previous page</a>
@@ -208,31 +234,54 @@
                 </div>
             </div> <!-- End of content area -->
 
-            <div class="grid__item grid__item--4-12-bp3 cf">
+            <div class="grid__item grid__item--3-12-bp3 cf">
+                <div class="sidebar cf">
 
-                <div class="trip-advisor TA_selfserveprop u-float-right" id="TA_selfserveprop33">
-                    <ul id="EcKBw4i4jI" class="TA_links qAfZLFtOfs">
-                    <li id="oyuDA9S9q" class="I7ExMxaf0XT">
-                    <a target="_blank" href="https://www.tripadvisor.co.uk/"><img src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a>
-                    </li>
-                    </ul>
-                </div>
+                    <div class="trip-advisor u-push-bottom TA_selfserveprop" id="TA_selfserveprop33">
+                        <ul id="EcKBw4i4jI" class="TA_links qAfZLFtOfs">
+                            <li id="oyuDA9S9q" class="I7ExMxaf0XT">
+                                <a target="_blank" href="https://www.tripadvisor.co.uk/">
+                                    <img src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- End of trip-advisor -->
 
-                <div class="facebook">
+                    <div class="share-buttons">
 
-                </div>
+                        <div class="facebook">
+                            <div class="fb-share-button" data-href="http://chomp--static/detail.html" data-layout="button" data-size="large" data-mobile-iframe="false">
+                                <a
+                                    class="fb-xfbml-parse-ignore"
+                                    target="_blank"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fchomp--static%2Fdetail.html&amp;src=sdkpreparse">
+                                    Share on Facebook
+                                </a>
+                            </div>
+                        </div> <!-- End of Facebook -->
 
-                <div class="twitter">
+                        <div class="twitter">
+                            <a
+                                class="twitter-share-button"
+                                href="https://twitter.com/intent/tweet?text=Check%20this%20restaurant%20out"
+                                data-size="large"
+                                hashtags="Leeds, Restaurant"
+                            >
+                                Share on Twitter
+                            </a>
+                        </div> <!-- End of Twitter -->
 
-                </div>
+                    </div> <!-- End of Share buttons -->
 
-            </div> <!-- End of side bar -->
-        </div>
-    </div>
+                </div> <!-- End of side bar -->
+            </div>  <!-- End of side bar grid item -->
+
+        </div> <!-- End of grid -->
+    </div> <!-- End of container -->
 
 </main>
 
-<footer class="footer u-push-top/2">
+<footer class="footer u-push-top@2">
     <div class="container">
         <div class="grid zeta">
 
