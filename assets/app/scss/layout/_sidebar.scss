@@ -43,12 +43,6 @@
     }
 }
 
-// .facebook, .twitter {
-//     @include respond-min($bp3) {
-//         margin-top: 1em;
-//     }
-// }
-
 .facebook {
 	margin-bottom: 1em;
 	@include respond-min($bp3) {
@@ -56,7 +50,3 @@
 		margin-left: 1em;
 	}
 }
-
-// .twitter {
-// 	clear: both;
-// }
