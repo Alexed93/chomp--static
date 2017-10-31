@@ -44,6 +44,7 @@
 .icon--medium { @include icon-size($icon-medium); }
 .icon--large { @include icon-size($icon-large); }
 .icon--xlarge { @include icon-size($icon-xlarge); }
+.icon--xxlarge { @include icon-size($icon-xxlarge); }
 
 /* Logos */
 .icon--logo {
