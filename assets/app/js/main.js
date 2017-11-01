@@ -77,9 +77,14 @@
         focusOnSelect: true
     });
 
-$('.card--animated').each(function(i) {
-    $(this).delay(400*(i+1)).animate({opacity:1}); //Uses the each methods index+1 to create a multiplier on the delay
-});
+
+    /**
+     * Sequential animation
+     */
+    $('.card--animated').each(function(i) {
+        $(this).delay(300*(i+1)).animate({opacity:1}); //Uses the each methods index+1 to create a multiplier on the delay
+    });
+// Code from here https://stackoverflow.com/questions/16867887/how-can-i-sequentially-fade-in-several-divs
 
 })(jQuery);
 

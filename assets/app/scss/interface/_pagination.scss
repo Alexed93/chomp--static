@@ -26,6 +26,10 @@
         @include respond-min($bp2) {
             display: inline;
         }
+
+        &.pagination_active {
+            background: $grey-lighter;
+        }
     }
 
     .first,
