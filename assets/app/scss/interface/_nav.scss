@@ -43,6 +43,7 @@ $color-nav: $color-link;
 
     &.is-current .nav__link {
         color: $italian;
+        border-bottom: 1px solid $italian;
     }
 
     @include respond-min($bp2) {
