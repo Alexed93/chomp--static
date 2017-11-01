@@ -33,6 +33,7 @@
     var body = $('body');
     var toggleNav = $('.toggle__icon--nav');
 
+
     /**
      * Toggle the navigation
      */

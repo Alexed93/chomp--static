@@ -229,9 +229,9 @@
 
                 <h1 class="beta u-push-bottom/2">Where to find us</h1>
                 <h2 class="gamma u-push-bottom/2">10-12 The Green Guiseley, Leeds, LS20 9BT</h2>
-                <div class="gmap">
+                <div id="map"></div>
 
-                </div> <!-- End of Google Map area -->
+     <!-- End of Google Map area -->
 
                 <h1 class="beta u-push-bottom/2">Comments</h1>
                 <h2 class="gamma u-push-bottom/2">Read about what other Chompers thought, or add your own comment</h2>
@@ -364,7 +364,36 @@
     </div>
 </div>
 
+<script>
+    function initMap() {
+        var myLatLng = {lat: 53.871993, lng: -1.707315};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            title: 'Hello World!'
+        });
+    }
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2P8-neUAbMuvh0X-FOFo3NkZmgw-PFRo&callback=initMap" async defer></script>
 <script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=33&amp;locationId=752455&amp;lang=en_UK&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
 <script src="/assets/dist/js/main.min.js"></script>
+
 </body>
 </html>
