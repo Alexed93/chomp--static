@@ -25,6 +25,10 @@
     clear: both;
 }
 
+.card--animated {
+    opacity: 0;
+}
+
 .card__image {
     width: 100%;
     height: auto;

@@ -77,6 +77,10 @@
         focusOnSelect: true
     });
 
+$('.card--animated').each(function(i) {
+    $(this).delay(400*(i+1)).animate({opacity:1}); //Uses the each methods index+1 to create a multiplier on the delay
+});
+
 })(jQuery);
 
 
