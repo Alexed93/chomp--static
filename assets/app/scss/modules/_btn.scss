@@ -188,7 +188,7 @@ button.search-submit {
     left: 0;
 }
 
-.filter_clear, .filter_submit {
+.filter_clear, .submit {
     width: auto;
     display: inline-block;
 }
@@ -199,7 +199,7 @@ button.search-submit {
     }
 }
 
-.filter_submit {
+.submit {
     transition: all .1s ease;
 
     &:hover {
